@@ -13,17 +13,17 @@ Operation can be modified with environment variables:
 
 ## FAQ
 
-#### Should I use this for a production service?
-
-No.
-
 #### Should I use this for a hobby project?
 
 Probably not.
 
+#### Should I use this for a production service?
+
+Please don't.
+
 #### Should I use this at all?
 
-Probably not.
+No.
 
 #### Why would you do this?
 
