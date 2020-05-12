@@ -50,6 +50,7 @@ function isInRootDir() {
 
 function httpError() {
     out "HTTP/1.1 $1"
+    out "Content-Length: 0"
     out "Connection: Close"
     out
 }
