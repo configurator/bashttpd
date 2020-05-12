@@ -15,6 +15,7 @@ ROOT="$(realpath ${ROOT:-.})"
 
 fifo="$(mktemp -u)"
 mkfifo "$fifo"
+trap "rm '$fifo'" EXIT
 
 CRLF="\r\n"
 export IFS=''
