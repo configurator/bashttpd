@@ -75,10 +75,7 @@ function serveFile() {
 }
 
 function cleanRequest() {
-    while true; do
-        read line || break
-        echo "$line" | tr -d '\r'
-    done
+    stdbuf -o0 tr -d '\r'
 }
 
 function handleRequest() {
