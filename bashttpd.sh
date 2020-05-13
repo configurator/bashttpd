@@ -122,11 +122,11 @@ function handleRequest() {
 
         local name="${headerLine%%:*}"
         local value="${headerLine#*:}"
-        headers["$name"]="${value# }"
+        headers["${name,,}"]="${value# }"
     done
 
     # Handle request
-    log "$method ${headers[Host]}$path"
+    log "$method ${headers[host]}$path"
     serveFile "$path" "$includeBody"
 }
 
